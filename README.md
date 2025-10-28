@@ -1,9 +1,9 @@
-# Flutter-Study-Lab
+# flutter-study-lab
 
 이 레포는 제가 직접 개선한 Flutter 실습 앱들을 모아둔 저장소입니다.
 
-`Flutter-Lecture-Lab`에는 강의를 따라 만든 원본 예제들이 들어갑니다.  
+`flutter-lecture-lab`에는 강의를 따라 만든 원본 예제들이 들어갑니다.  
 이 레포에는 그 예제들을 바탕으로 **구조를 바꾸고, 기능을 추가하고, 실제 사용 앱처럼 발전시킨 버전만** 올립니다.
 
 튜토리얼 원본 그대로인 프로젝트는 포함하지 않습니다.  
-개선 전 초기 버전이 궁금하다면 `Flutter-Lecture-Lab`을 참고해주세요.
+개선 전 초기 버전이 궁금하다면 `flutter-lecture-lab`을 참고해주세요.
