@@ -11,4 +11,4 @@
 
 ## 데모 영상
 
-<img src="./screenshots/i_am_rich_plus_demo.gif" width="70%" height="70%" />
+<img src="./screenshots/i_am_rich_plus_demo.gif" width="50%" height="50%" />
