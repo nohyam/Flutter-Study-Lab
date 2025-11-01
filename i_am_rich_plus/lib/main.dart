@@ -66,7 +66,6 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: Image.asset("images/diamond.png"),
       ),
-      backgroundColor: theme.colorScheme.primary,
     );
   }
 }

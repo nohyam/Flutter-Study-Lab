@@ -15,6 +15,7 @@ class AppTheme {
       brightness: Brightness.light,
     ),
     appBarTheme: _appBar,
+    scaffoldBackgroundColor: Colors.blueGrey[300],
   );
 
   static ThemeData dark = ThemeData(
@@ -24,5 +25,6 @@ class AppTheme {
       brightness: Brightness.dark,
     ),
     appBarTheme: _appBar,
+    scaffoldBackgroundColor: Colors.blueGrey[800],
   );
 }
