@@ -12,3 +12,6 @@
 ## 데모 영상
 
 <img src="./screenshots/i_am_rich_plus_demo.gif" width="50%" height="50%" />
+
+## 강의 원본
+- https://github.com/nohyam/flutter-lecture-lab/tree/main/i_am_rich
