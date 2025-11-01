@@ -11,4 +11,4 @@
 
 ## 데모 영상
 
-![i_am_rich_plus demo](./screenshots/i_am_rich_plus_demo.gif)
+<img src="./screenshots/i_am_rich_plus_demo.gif" width="70%" height="70%" />
