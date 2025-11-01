@@ -1,16 +1,14 @@
 # i_am_rich_plus
 
-A new Flutter project.
+## 목적
+- 화면 코드와 테마를 **관심사별로 분리**해서, 실제 앱처럼 관리하는 연습
 
-## Getting Started
+## 기능
+- 원본과 같은 단일 화면 표시
+- 'theme', 'darkTheme', 'themeMode'를 설정해서 light/dark 모드를 지원 할 수 있는 구조
+- AppBar 스타일을 한 곳에서 정의해서 화면마다 반복 설정하지 않도록 설계
+- AppBar에 IconButton으로 테마 토글 
 
-This project is a starting point for a Flutter application.
+## 데모 영상
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![i_am_rich_plus demo](./screenshots/i_am_rich_plus_demo.gif)
