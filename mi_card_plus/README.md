@@ -1,25 +1,18 @@
 # mi_card
 
-플러터 기초 연습으로 만든 간단한 프로필 카드 앱입니다. 
-하나의 화면 안에 프로필 이미지, 이름, 직무, 연락처 카드가 들어가며 레이아웃과 위젯 구조를 익히는 데 목적이 있습니다.
+기본 mi_card 예제를 확장해서 **카드를 누르면 실제 액션이 실행되는** 인터랙티브 버전입니다.  
+전화, 이메일, GitHub 링크를 `url_launcher` 패키지로 연동했고, 카드 UI는 재사용 가능한 위젯(`AppCard`)으로 분리했습니다.
 
-## 기능 / 화면 구성
-- 상단 프로필 이미지 (CircleAvatar)
-- 사용자 이름 (커스텀 폰트 사용)
-- 직무/직업 텍스트 (대문자 + letter spacing)
-- 구분선 (Divider)
-- 전화번호/이메일을 Card + ListTile 로 표현
+## 주요 기능
 
-## 사용한 주요 위젯
-- `MaterialApp`, `Scaffold`
-- `SafeArea`
-- `Column` + `mainAxisAlignment: MainAxisAlignment.center`
-- `CircleAvatar`
-- `Text` + `TextStyle` (커스텀 폰트)
-- `SizedBox` + `Divider`
-- `Card` + `ListTile`
-- `AssetImage`
+- 프로필 화면(아바타, 이름, 직무) 기본 UI
+- 연락처/이메일/깃허브를 **카드 한 번 탭**으로 열기
+    - 전화: `tel:` 스킴으로 기본 전화 앱 실행
+    - 이메일: `mailto:` 스킴으로 기본 메일 앱 실행
+    - 깃허브: `https://...` 링크 열기
+- 공통 카드 위젯 `AppCard` 로 UI 재사용
+- 정적 정보(전화, 이메일, 깃허브 주소)를 `static const` 로 한 곳에 모아 관리
+- `lib/main.dart` ↔ `lib/src/app.dart` 분리로 구조 정리
 
 ## Preview
-
-<img src="assets/screeenshots/mi_card.png" width="50%" height="50%" />
+<img src="assets/screeenshots/mi_card_plus.gif" width="50%" height="50%">
