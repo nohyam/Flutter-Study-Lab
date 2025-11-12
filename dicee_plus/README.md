@@ -1,20 +1,14 @@
-# dicee
+# dicee_plus
 
-플러터 상태와 레이아웃을 연습하기 위한 간단한 주사위 앱입니다. 화면의 주사위를 탭할 때마다 1~6 사이 난수로 이미지가 변경됩니다.
+기본 Dicee 튜토리얼을 확장해 테마/구조 분리, 히스토리 보드, UI 개선을 적용한 플러스 버전입니다.
+라이트/다크 테마, 파일 구조 분리, 최근 합계 히스토리(10칸) 표시, 롤 버튼 분리 등을 개선했습니다.
 
-## 기능 / 화면 구성
-- 상단 앱바(`AppBar`)와 붉은 배경
-- 중앙에 두 개의 주사위 이미지
-- 각 주사위를 탭하면 **두 주사위가 동시에** 값 갱신
-- 가로 방향 균등 배치(두 주사위 동일 폭)
-
-## 사용한 주요 위젯
-- `MaterialApp`, `Scaffold`, `AppBar`
-- `Center`, `Row`, `Expanded`
-- `TextButton`
-- `Image.asset` (에셋 이미지 로딩)
-- 상태 관리: `StatefulWidget` + `setState`
-- 난수 생성: `Random()`
+## 주요 기능
+- Roll 버튼을 누를 때마다 1~6 난수 생성, 주사위 이미지 즉시 갱신
+- 최근 10개의 합계를 1행 표로 표시—새 값이 맨 앞에 쌓이고 넘치면 맨 끝 값 자동 제거
+- Material 3 + ThemeMode.system 채택, AppBar/배경 일관 적용
+- lib/app.dart(앱 루트), lib/screens/dice_screen.dart(화면), lib/theme/app_theme.dart(테마)로 모듈화
+- Row/Expanded/Table로 반응형 배치, 중앙 정렬 및 여백 최적화
 
 ## Preview
-[dicee.mp4](assets/screenshots/dicee.mp4)
+https://github.com/user-attachments/assets/21012d55-3b78-4776-bcf4-8cab3650061f
