@@ -15,4 +15,4 @@
 - `lib/main.dart` ↔ `lib/src/app.dart` 분리로 구조 정리
 
 ## Preview
-<img src="assets/screeenshots/mi_card_plus.gif" width="50%" height="50%">ggggggg
+https://github.com/user-attachments/assets/cc65bcf3-d767-4ca6-895f-779fea0fab47
