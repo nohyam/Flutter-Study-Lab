@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../constants/color_constants.dart';
+import '../constants/size.dart';
+import '../theme/text_theme.dart';
 
 class BottomButton extends StatelessWidget {
   final VoidCallback onTap;
@@ -25,7 +27,7 @@ class BottomButton extends StatelessWidget {
         child: Center(
           child: Text(
             buttonTitle,
-            style: kLargeButtonStyle,
+            style: textTheme.labelLarge,
           ),
         ),
       ),
