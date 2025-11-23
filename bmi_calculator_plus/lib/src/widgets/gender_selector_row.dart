@@ -36,6 +36,9 @@ class GenderSelectorRow extends StatelessWidget {
               icon: FontAwesomeIcons.mars,
               label: "MALE",
             ),
+            margin: selectedGender == Gender.male
+                ? const EdgeInsets.all(10.0)
+                : const EdgeInsets.all(15.0),
           ),
         ),
         Expanded(
@@ -50,6 +53,9 @@ class GenderSelectorRow extends StatelessWidget {
               icon: FontAwesomeIcons.venus,
               label: "FEMALE",
             ),
+            margin: selectedGender == Gender.female
+                ? const EdgeInsets.all(10.0)
+                : const EdgeInsets.all(15.0),
           ),
         ),
       ],

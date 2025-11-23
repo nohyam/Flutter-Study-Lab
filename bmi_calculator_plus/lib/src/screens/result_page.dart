@@ -17,6 +17,20 @@ class ResultPage extends StatelessWidget {
   final String bmiResult;
   final String interpretation;
 
+  TextStyle? resultColor() {
+    if (resultText == 'Overweight') {
+      return textTheme.headlineSmall?.copyWith(
+        color: Colors.red[900],
+      );
+    } else if (resultText == 'Underweight') {
+      return textTheme.headlineSmall?.copyWith(
+        color: Colors.yellow,
+      );
+    } else {
+      return textTheme.headlineSmall;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +63,7 @@ class ResultPage extends StatelessWidget {
                 children: [
                   Text(
                     resultText.toUpperCase(),
-                    style: textTheme.headlineSmall,
+                    style: resultColor(),
                   ),
                   Text(
                     bmiResult,
@@ -68,7 +82,7 @@ class ResultPage extends StatelessWidget {
             onTap: () {
               Navigator.pop(context);
             },
-            buttonTitle: 'RE-CALCULATOR',
+            buttonTitle: 'RE-CALCULATE',
           ),
         ],
       ),

@@ -2,14 +2,10 @@ import 'package:bmi_calculator/src/domain/calculator_brain.dart';
 import 'package:bmi_calculator/src/screens/result_page.dart';
 import 'package:bmi_calculator/src/widgets/gender_selector_row.dart';
 import 'package:bmi_calculator/src/widgets/height_selector.dart';
+import 'package:bmi_calculator/src/widgets/weight_and_age.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../constants/color_constants.dart';
-import '../theme/text_theme.dart';
 import '../widgets/bottom_button.dart';
-import '../widgets/reusable_card.dart';
-import '../widgets/round_icon_button.dart';
 
 class InputPage extends StatefulWidget {
   const InputPage({super.key});
@@ -56,87 +52,33 @@ class _InputPageState extends State<InputPage> {
           Expanded(
             child: Row(
               children: [
-                Expanded(
-                  child: ReusableCard(
-                    boxColor: kActiveCardColor,
-                    cardChild: Column(
-                      children: [
-                        Text(
-                          'WEIGHT',
-                          style: textTheme.titleSmall,
-                        ),
-                        Text(
-                          weight.toString(),
-                          style: textTheme.headlineMedium,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            RoundIconButton(
-                              icon: FontAwesomeIcons.minus,
-                              onPressed: () {
-                                setState(() {
-                                  weight--;
-                                });
-                              },
-                            ),
-                            SizedBox(
-                              width: 10.0,
-                            ),
-                            RoundIconButton(
-                              icon: FontAwesomeIcons.plus,
-                              onPressed: () {
-                                setState(() {
-                                  weight++;
-                                });
-                              },
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
+                WeightAndAgeRow(
+                  label: 'WEIGHT',
+                  value: weight,
+                  onPressedMinus: () {
+                    setState(() {
+                      weight--;
+                    });
+                  },
+                  onPressedPlus: () {
+                    setState(() {
+                      weight++;
+                    });
+                  },
                 ),
-                Expanded(
-                  child: ReusableCard(
-                    boxColor: kActiveCardColor,
-                    cardChild: Column(
-                      children: [
-                        Text(
-                          'AGE',
-                          style: textTheme.titleSmall,
-                        ),
-                        Text(
-                          age.toString(),
-                          style: textTheme.headlineMedium,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            RoundIconButton(
-                              icon: FontAwesomeIcons.minus,
-                              onPressed: () {
-                                setState(() {
-                                  age--;
-                                });
-                              },
-                            ),
-                            SizedBox(
-                              width: 10.0,
-                            ),
-                            RoundIconButton(
-                              icon: FontAwesomeIcons.plus,
-                              onPressed: () {
-                                setState(() {
-                                  age++;
-                                });
-                              },
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
+                WeightAndAgeRow(
+                  label: 'AGE',
+                  value: age,
+                  onPressedMinus: () {
+                    setState(() {
+                      age--;
+                    });
+                  },
+                  onPressedPlus: () {
+                    setState(() {
+                      age++;
+                    });
+                  },
                 ),
               ],
             ),
